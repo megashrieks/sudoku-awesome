@@ -98,16 +98,6 @@ highlightBlock(row,col);
 highlightrc(row,col);
 });
 
-$("input").hover(function(){
-//$("input").removeClass("active-block");
-$(this).addClass("active-block");
-var c=$(this).attr("class");
-var row=c[0];
-var col=c[1]; 
-highlightBlock(row,col); 
-highlightrc(row,col);
-});
-
 $("input").blur(function(){
 $("input").removeClass("active-block"); 
 $("input").removeClass("active-rc"); 
